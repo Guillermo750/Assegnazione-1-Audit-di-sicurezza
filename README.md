@@ -84,9 +84,3 @@ $ pip install requests
 └── requirents.txt
 ```
 
-## 10. 
-
-## 11.
-
-## 12. 
-
