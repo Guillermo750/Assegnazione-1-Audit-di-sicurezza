@@ -32,19 +32,18 @@ $ sudo apt update
 $ sudo apt install python3
 ```
 
-## 4. Creare l'ambiente virtuale denominato `venv` all'interno della cartella del progetto:
+## 4. Preparazione dell'ambiente:
+4.1 Configura l'ambiente virtuale:
 
 ```bash
 $ python3 -m venv venv
 ```
 
-## 5. Attivare tale ambiente:
-
 ```bash
 $ source venv/bin/activate
 ```
 
-## 6. Installazione delle librerie
+## 5. Installazione delle librerie
 
 ```bash
 $ pip install --upgrade pip
@@ -54,16 +53,19 @@ $ pip install --upgrade pip
 $ pip install httpx dnspython beautifulsoup4
 ```
 
-## 7. Installazione della libreria `requests`:
-
 ```bash
 $ pip install requests
 ```
 
-## 8. 
+## 6. Comando di esecuzione
 
-## 9. Struttura del progetto
+```bash
 
+```
+
+## 7. Struttura del progetto
+
+```bash
 |── auditoria_seguridad/
 |   ├── core/               # Logica principale del rilevatore e della scansione
 │    ├── cms_detector.py
@@ -84,3 +86,8 @@ $ pip install requests
 └── requirents.txt
 ```
 
+## 8. Risultati ottenuti
+
+## 9. Limiti e controlli non invasivi
+
+## 10. Possibile utilizzo di strumenti di intelligenza artificiale
