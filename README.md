@@ -81,7 +81,8 @@ $ pip install requests
 ├── report.json         # Risultato dell'analisi in formato JSON
 ├── report.md           # Report generato in formato Markdown
 └── test_cms.py         # Script di test specifico per il rilevatore
-└── requirents.txt```
+└── requirents.txt
+```
 
 ## 10. 
 
