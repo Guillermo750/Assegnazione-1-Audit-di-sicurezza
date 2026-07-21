@@ -32,77 +32,38 @@ $ sudo apt update
 $ sudo apt install python3
 ```
 
-3.2. Comando per visualizzare l'ultima versione del programma:
-
-```bash
-$ python3 –version
-```
-
-## 4 Creazione la cartella e accedervi:
-
-```bash
-$ mkdir audit_sicurezza
-```
-
-```bash
-$ cd audit_sicurezza
-```
-
-## 5. Creare l'ambiente virtuale denominato `venv` e verificare:
+## 4. Creare l'ambiente virtuale denominato `venv` all'interno della cartella del progetto:
 
 ```bash
 $ python3 -m venv venv
 ```
 
-```bash
-$ ls -l
-```
-
-## 6. Attivare tale ambiente:
+## 5. Attivare tale ambiente:
 
 ```bash
 $ source venv/bin/activate
 ```
 
-## 7. Installazione delle librerie
+## 6. Installazione delle librerie
 
 ```bash
 $ pip install --upgrade pip
 ```
 
-![Esecuzione delle librerie](assets/libreria_1.png)
-
 ```bash
 $ pip install httpx dnspython beautifulsoup4
 ```
 
-![Esecuzione delle librerie](assets/libreria_2.png)
-
-## 8. Creazione delle directory e dei file:
-
-```bash
-$ mkdir core reports test
-```
-
-```bash
-$ touch main.py core/__init__.py core/utils.py core/scanner.py core/scoring.py core/cms_detector.py reports/generator.py reports/__init__.py  tests/__init__.py tests/test_scanner.py
-```
-
-## 9. Installazione della libreria `requests`:
+## 7. Installazione della libreria `requests`:
 
 ```bash
 $ pip install requests
 ```
 
-![Esecuzione delle librerie](assets/libreria_3.png)
+## 8. 
 
-## 10. Struttura del progetto
+## 9. Struttura del progetto
 
-```bash
-$ tree -I "__pycache__|venv|.git"
-```
-
-```
 |── auditoria_seguridad/
 |   ├── core/               # Logica principale del rilevatore e della scansione
 │    ├── cms_detector.py
@@ -120,5 +81,11 @@ $ tree -I "__pycache__|venv|.git"
 ├── report.json         # Risultato dell'analisi in formato JSON
 ├── report.md           # Report generato in formato Markdown
 └── test_cms.py         # Script di test specifico per il rilevatore
-└── requirents.txt
-```
+└── requirents.txt```
+
+## 10. 
+
+## 11.
+
+## 12. 
+
