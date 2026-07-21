@@ -1,0 +1,28 @@
+[
+    {
+        "test": "DNS Resolution",
+        "status": "PASS",
+        "details": "IP: 104.20.23.154",
+        "score": 10,
+        "severity": "NONE"
+    },
+    {
+        "test": "TLS/SSL",
+        "status": "PASS",
+        "details": "Certificato valido e crittografia attiva",
+        "score": 10,
+        "severity": "INFO"
+    },
+    {
+        "test": "Security Headers",
+        "status": "WARNING",
+        "score": 0.0,
+        "severity": "CRITICAL"
+    },
+    {
+        "test": "CMS Passive Detection",
+        "status": "NOT_FOUND",
+        "score": 0,
+        "severity": "NONE"
+    }
+]
