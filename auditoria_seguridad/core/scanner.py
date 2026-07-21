@@ -3,7 +3,7 @@ import ssl
 import requests
 import time
 
-from core.utils import get_severity, calculate_header_score
+from core.utils import get_severity, calculate_header_score, check_dns_record
 
 # Importa il modulo di rilevamento pasivo del CMS.
 # Utiliza la metodologia di analisi non invasiva di WPScan per identificarre le tecnologíe web senza generare traffico di attacco.
@@ -103,7 +103,7 @@ class SecurityScanner:
              "severity": "CRITICAL"
             }
   
-  def scan_sensitive_file(self):
+  def scan_sensitive_files(self):
     """ IN ATTESA: Implementazione relativa ai file sensibili (.env, backup, configurazione).
         Modulo previsto per la versione 2.0"""
     return {"test": "Sensitive Files", "status": "PLANNED", "details": "Pending implemeentation", "score": 0, "severity": "INFO"}
