@@ -60,7 +60,19 @@ $ pip install requests
 ## 6. Comando di esecuzione
 
 ```bash
+$ python3 main.py --url <URL_DEL_TARGET>
+```
 
+Opzioni disponibili:
+
+--url: URL del sito web da analizzare (obbligatorio).
+
+--verbose: Visualizza log dettagliati durante l'esecuzione.
+
+--output: Salva il report in un file (ad es. report.json).
+
+```bash
+$ python3 main.py --url https://www.ejemplo.com --output report.json
 ```
 
 ## 7. Struttura del progetto
@@ -86,8 +98,22 @@ $ pip install requests
 └── requirents.txt
 ```
 
-## 8. Risultati ottenuti
+## 8. Risultati del progetto
+Al termine dell'audit, lo strumento genera risultati dettagliati che facilitano l'analisi della sicurezza:
 
+* **Report JSON:** un file strutturato contenente tutti i dati tecnici raccolti, ideale per integrazioni o analisi automatizzate successive.
+* **Report Markdown (.md):** una sintesi leggibile e ben formattata, progettata per facilitare la lettura da parte dell'utente e la presentazione dei risultati.
+  
 ## 9. Limiti e controlli non invasivi
+Questo strumento è stato progettato nel rispetto di rigorosi principi di sicurezza ed etica professionale:
+
+* **Approccio passivo:** il sistema esegue il riconoscimento senza inviare payload né sfruttare vulnerabilità, garantendo che non si verifichino modifiche allo stato del sito web.
+* **Riduzione del rumore:** i metodi di fingerprinting sono ottimizzati per ridurre al minimo il volume di traffico generato, evitando di attivare i sistemi di rilevamento delle intrusioni (IDS/IPS).
+* **Uso etico:** lo strumento deve essere utilizzato esclusivamente in ambienti controllati, laboratori di test o sistemi per i quali si disponga di un'autorizzazione esplicita a effettuare audit.
 
 ## 10. Possibile utilizzo di strumenti di intelligenza artificiale
+Nel corso dello sviluppo di questo progetto, l’intelligenza artificiale è stata utilizzata come assistente alla programmazione e collaboratore tecnico per:
+
+* **Strutturazione e documentazione:** Ottimizzazione del file `README.md` e organizzazione logica del codice.
+* **Debug e refactoring:** supporto nell’identificazione delle migliori pratiche in Python e nella risoluzione di problemi tecnici specifici.
+* **Generazione di test:** supporto nella creazione della suite di test unitari per garantire la qualità del software.
