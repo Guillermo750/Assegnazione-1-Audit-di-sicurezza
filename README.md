@@ -22,8 +22,6 @@ In Kali Linux: è sempre necessario utilizzare `sudo` per aggiornare i repositor
 
 Nei sistemi in cui l'utente è amministratore: in molte altre distribuzioni Linux (come Ubuntu), se l'utente appartiene al gruppo sudo, il sistema richiederà la password quando si utilizza il comando.
 
-3.1 Aggiornare il repository e installarlo:
-
 ```bash
 $ sudo apt update
 ```
@@ -32,8 +30,7 @@ $ sudo apt update
 $ sudo apt install python3
 ```
 
-## 4. Preparazione dell'ambiente:
-4.1 Configura l'ambiente virtuale:
+## 4. Preparazione dell'ambiente virtuale:
 
 ```bash
 $ python3 -m venv venv
