@@ -8,7 +8,7 @@ def main():
  
  # Argomenti accettati dallo strumento
  parser.add_argument("--url", required=True)
- parser.add_argument("--format", choices=["json", "md"], default="md", help="Formato de reporte (json o md)")
+ parser.add_argument("--format", choices=["json", "md"], default="md", help="Formato del rapporto (json o md)")
 
  # Qui creiamo gli argomenti
  args = parser.parse_args()
