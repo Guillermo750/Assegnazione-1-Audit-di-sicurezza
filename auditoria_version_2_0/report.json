@@ -1,0 +1,43 @@
+[
+    {
+        "test": "DNS Security (SPF/DMARC)",
+        "status": "FAIL",
+        "score": 0,
+        "severity": "CRITICAL",
+        "details": "SPF: FAIL, DMARC: FAIL"
+    },
+    {
+        "test": "TLS/SSL",
+        "status": "PASS",
+        "details": "Certificato valido e crittografia attiva",
+        "score": 10,
+        "severity": "INFO"
+    },
+    {
+        "test": "Security Headers",
+        "status": "WARNING",
+        "score": 3.3,
+        "severity": "HIGH",
+        "details": "Intestazioni trovate: 1/6"
+    },
+    {
+        "test": "Sensitive Files",
+        "status": "PLANNED",
+        "details": "Pending implemeentation",
+        "score": 0,
+        "severity": "INFO"
+    },
+    {
+        "test": "Bot/IA Detection",
+        "status": "PLANNED",
+        "details": "Pending implementation",
+        "score": 0,
+        "severity": "INFO"
+    },
+    {
+        "test": "CMS FIngerprinting",
+        "status": "PASS",
+        "result": "Unknown",
+        "details": "Nessuna firma CMS rilevata."
+    }
+]
