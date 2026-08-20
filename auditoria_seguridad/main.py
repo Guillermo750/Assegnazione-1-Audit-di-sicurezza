@@ -4,11 +4,11 @@ from reports.generator import ReportGenerator
 
 def main():
  # Configurazione dell'interfaccio CLI
- parser = argparse.ArgumentParser(description="Website Security Baseline Audit Tool - Framework de auditoría pasiva")
+ parser = argparse.ArgumentParser(description="Website Security Baseline Audit Tool - Framework di auditing passivo")
  
  # Argomenti accettati dallo strumento
- parser.add_argument("--url", required=False) # url non obbligatoria se usiamo --history
- parser.add_argument("--format", choices=["json", "md"], default="md", help="Formato de reporte (json o md)")
+    parser.add_argument("--url", required=True)
+    parser.add_argument("--format", choices=["json", "md"], default="md", help="Formato del rapporto (json o md)")
  
  # Qui definiamo gli argomenti
  args = parser.parse_args()
