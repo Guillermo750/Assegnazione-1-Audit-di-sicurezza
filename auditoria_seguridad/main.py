@@ -3,18 +3,18 @@ from core.scanner import SecurityScanner
 from reports.generator import ReportGenerator
 
 def main():
- # Configurazione dell'interfaccia CLI
- parser = argparse.ArgumentParser(description="Website Security Baseline Audit Tool - Framework di auditing passivo")
+ # Configurazione dell'interfaccio CLI
+ parser = argparse.ArgumentParser(description="Website Security Baseline Audit Tool - Framework de auditoría pasiva")
  
  # Argomenti accettati dallo strumento
- parser.add_argument("--url", required=True)
- parser.add_argument("--format", choices=["json", "md"], default="md", help="Formato del rapporto (json o md)")
-
- # Qui creiamo gli argomenti
+ parser.add_argument("--url", required=False) # url non obbligatoria se usiamo --history
+ parser.add_argument("--format", choices=["json", "md"], default="md", help="Formato de reporte (json o md)")
+ 
+ # Qui definiamo gli argomenti
  args = parser.parse_args()
  
- # Ora che `args` esiste, lo stampiamo
- print(f"[*] Avvio di un quadro di audit per: {args.url}")
+ # Argomenti accettati dallo strumento
+ print(f"[*] Avvio del framework di audit per: {args.url}")
 
  # 1. Eseguiamo la scansione
  scanner = SecurityScanner(args.url)

@@ -1,10 +1,10 @@
 [
     {
-        "test": "DNS Resolution",
-        "status": "PASS",
-        "details": "IP: 104.20.23.154",
-        "score": 10,
-        "severity": "NONE"
+        "test": "DNS Security (SPF/DMARC)",
+        "status": "FAIL",
+        "score": 0,
+        "severity": "CRITICAL",
+        "details": "SPF: FAIL, DMARC: FAIL"
     },
     {
         "test": "TLS/SSL",
@@ -15,14 +15,29 @@
     },
     {
         "test": "Security Headers",
-        "status": "WARNING",
-        "score": 0.0,
-        "severity": "CRITICAL"
+        "status": "PASS",
+        "score": 8.3,
+        "severity": "INFO",
+        "details": "Intestazioni trovate: 5/6"
     },
     {
-        "test": "CMS Passive Detection",
-        "status": "NOT_FOUND",
+        "test": "Sensitive Files",
+        "status": "PLANNED",
+        "details": "Pending implemeentation",
         "score": 0,
-        "severity": "NONE"
+        "severity": "INFO"
+    },
+    {
+        "test": "Bot/IA Detection",
+        "status": "PLANNED",
+        "details": "Pending implementation",
+        "score": 0,
+        "severity": "INFO"
+    },
+    {
+        "test": "CMS FIngerprinting",
+        "status": "PASS",
+        "result": "WordPress",
+        "details": "Firme rilevate: wp-content, wp-includes, wp-json, wp-login.php. Metodologia di anlisi: FIngerprinting passivo."
     }
 ]

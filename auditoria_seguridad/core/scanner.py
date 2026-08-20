@@ -75,7 +75,10 @@ class SecurityScanner:
   def scan_headers(self):
    self._apply_delay()
    try:
-     response = requests.get(f"https://{self.target}", timeout=5)
+     # Definiamo |'User-Agent ufficiale richiesto dalle specifiche
+     custom_headers = {'User-Agent': 'Hirooks-Security-Baseline-Prototype/0.1'}
+
+     response = requests.get(f"https://{self.target}", timeout=5, headers=custom_headers)
      # Calcoliamo il punteggio utilizzando la nostra funzione centralizzata.
      score = calculate_header_score(response.headers)
 
@@ -117,19 +120,19 @@ class SecurityScanner:
   def run_audit(self):
    """Esegue tutti i test e restituisce l'elenco dei risultati"""
    audit_data = []
+   
    audit_data.append(self.scan_dns())
    audit_data.append(self.scan_tls())
-   audit_data.append(self.scan_headers())
-   
+   audit_data.append(self.scan_headers()) 
    # Nuovi punti pianificati integrati nel flusso
    audit_data.append(self.scan_sensitive_files())
    audit_data.append(self.scan_bot_ai_behavior())
-
-   # Fase di ricognizione passiva: fingerprinting del CMS.
-   # Inspirato al flusso di lavoro di WPScan, rileva componenti e versioni.
-   # tramite analisi dell'intestazione e del codice sorgente per dare prioritá ai test successivi.
+   
+   
+   # Scansione del CMS
    detector = CMSDetector(self.target)
    audit_data.append(detector.run_passive_scan())
+
 
    return audit_data
 

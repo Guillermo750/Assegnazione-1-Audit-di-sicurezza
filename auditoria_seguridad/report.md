@@ -1,24 +1,34 @@
-# Reporte de Auditoría de Seguridad
+# Report di audit di sicurezza
 
-## Resultados del escaneo
+## Risultati della scancione
 
-- **Prueba: DNS Resolution
-- **Estado: PASS
-- **Gravedad: NONE
-- **Puntos: 10
+- **Test: DNS Security (SPF/DMARC)
+- **Stato: FAIL
+- **Gravitá: CRITICAL
+- **Punti: 0
 
-- **Prueba: TLS/SSL
-- **Estado: PASS
-- **Gravedad: INFO
-- **Puntos: 10
+- **Test: TLS/SSL
+- **Stato: PASS
+- **Gravitá: INFO
+- **Punti: 10
 
-- **Prueba: Security Headers
-- **Estado: WARNING
-- **Gravedad: CRITICAL
-- **Puntos: 0.0
+- **Test: Security Headers
+- **Stato: PASS
+- **Gravitá: INFO
+- **Punti: 8.3
 
-- **Prueba: CMS Passive Detection
-- **Estado: NOT_FOUND
-- **Gravedad: NONE
-- **Puntos: 0
+- **Test: Sensitive Files
+- **Stato: PLANNED
+- **Gravitá: INFO
+- **Punti: 0
+
+- **Test: Bot/IA Detection
+- **Stato: PLANNED
+- **Gravitá: INFO
+- **Punti: 0
+
+- **Test: CMS FIngerprinting
+- **Stato: PASS
+- **Gravitá: N/A
+- **Punti: 0
 
